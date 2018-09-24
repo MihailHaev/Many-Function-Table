@@ -1,10 +1,11 @@
 import React, {PureComponent} from 'react'
 
+
+// Отображает дополнительную информация у кликнутого столбца
 class RowInfo extends PureComponent {
 
-  
-
   render() {
+    // Преобразовываем поступившие к нам пропсы в массив
     const {openRowId, tableData} = this.props
     let selectedRow = null
     for (let i = 0; i < this.props.tableData.length; i++) {
